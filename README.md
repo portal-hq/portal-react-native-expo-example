@@ -5,6 +5,8 @@ This is a project demonstrating how to integrate [Portal's React Native SDK](htt
 ## Features
 
 - Create a client's wallet
+- Back it up with a hardcoded password
+- Recover it with the password
 - View the wallet's address
 - Send USDC on Sepolia testnet
 
