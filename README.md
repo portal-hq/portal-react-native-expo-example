@@ -1,50 +1,70 @@
-# Welcome to your Expo app 👋
+# Portal MPC Wallet Demo with Expo 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a project demonstrating how to integrate [Portal's React Native SDK](https://docs.portalhq.io) into an [Expo](https://expo.dev) application.
 
-## Get started
+## Features
+
+- Create a client's wallet
+- View the wallet's address
+- Send USDC on Sepolia testnet
+
+<div style="display: flex; justify-content: space-between; gap: 10px;">
+  <img src="./assets/images/client-api-key.png" width="250" alt="Enter Client API Key" />
+  <img src="./assets/images/create-wallet.png" width="250" alt="Create Wallet" />
+  <img src="./assets/images/send-usdc.png" width="250" alt="Send USDC" />
+</div>
+
+## Setup
 
 1. Install dependencies
-
    ```bash
    npm install
    ```
 
-2. Start the app
+2. Configure Portal SDK
+   - Reach out to Portal to get a [Client API Key](https://docs.portalhq.io/docs/getting-started/client-api-key), or if you already have access to the [Portal Admin Dashboard](https://app.portalhq.io), you can create a test Client API Key in Settings.
+   - This app uses Sepolia testnet by default
 
+3. Configure Alchemy API Key
+   - Get an Alchemy API Key from [Alchemy](https://www.alchemy.com)
+   - Update the `ALCHEMY_API_KEY` in the `config.ts` file
+
+3. Build the app (we recommend using [Xcode](https://developer.apple.com/xcode/) or [Android Studio](https://developer.android.com/studio) and opening the Expo workspace directly)
+
+4. Run the app on an iOS or Android simulator
+
+## Important Notes
+
+### Native Dependencies
+
+This project includes Portal's MPC AAR file. To use it:
+
+1. Install the development build
    ```bash
-    npx expo start
+   npx expo install expo-dev-client
    ```
 
-In the output, you'll find options to open the app in a
+2. Create a development build
+   ```bash
+   npx expo prebuild
+   ```
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Plugin Configuration
+
+The project includes a custom Expo plugin (`./plugins/withPortalMPC.js`) that handles:
+- Copying Portal's native MPC AAR file
+- Setting up necessary Android/iOS configurations
+
+## Development
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
+### Testing the Wallet
 
-When you're ready, run:
+1. Get test USDC from the [Circle Faucet](https://faucet.circle.com)
+2. Get Sepolia ETH for gas from the [Sepolia Faucet](https://sepoliafaucet.com)
 
-```bash
-npm run reset-project
-```
+## Learn More
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- [Portal Documentation](https://docs.portalhq.io)
+- [Expo Documentation](https://docs.expo.dev)
