@@ -16,9 +16,9 @@
   },
   "dependencies": {
     "@expo/vector-icons": "^14.0.2",
-    "@portal-hq/core": "^4.1.1",
-    "@portal-hq/gdrive-storage": "^4.1.1",
-    "@portal-hq/keychain": "^4.1.1",
+    "@portal-hq/core": "^4.1.6",
+    "@portal-hq/gdrive-storage": "^4.1.6",
+    "@portal-hq/keychain": "^4.1.6",
     "@react-navigation/bottom-tabs": "^7.2.0",
     "@react-navigation/native": "^7.0.14",
     "expo": "~52.0.23",

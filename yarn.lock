@@ -784,7 +784,20 @@
     "@babel/parser" "^7.25.9"
     "@babel/types" "^7.25.9"
 
-"@babel/traverse--for-generate-function-map@npm:@babel/traverse@^7.25.3", "@babel/traverse@^7.25.3", "@babel/traverse@^7.25.9", "@babel/traverse@^7.26.5":
+"@babel/traverse--for-generate-function-map@npm:@babel/traverse@^7.25.3":
+  version "7.26.5"
+  resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.26.5.tgz#6d0be3e772ff786456c1a37538208286f6e79021"
+  integrity sha512-rkOSPOw+AXbgtwUga3U4u8RpoK9FEFWBNAlTpcnkLFjL5CT+oyHNuUUC/xx6XefEJ16r38r8Bc/lfp6rYuHeJQ==
+  dependencies:
+    "@babel/code-frame" "^7.26.2"
+    "@babel/generator" "^7.26.5"
+    "@babel/parser" "^7.26.5"
+    "@babel/template" "^7.25.9"
+    "@babel/types" "^7.26.5"
+    debug "^4.3.1"
+    globals "^11.1.0"
+
+"@babel/traverse@^7.25.3", "@babel/traverse@^7.25.9", "@babel/traverse@^7.26.5":
   version "7.26.5"
   resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.26.5.tgz#6d0be3e772ff786456c1a37538208286f6e79021"
   integrity sha512-rkOSPOw+AXbgtwUga3U4u8RpoK9FEFWBNAlTpcnkLFjL5CT+oyHNuUUC/xx6XefEJ16r38r8Bc/lfp6rYuHeJQ==
@@ -1461,57 +1474,59 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
-"@portal-hq/connect@^4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@portal-hq/connect/-/connect-4.1.1.tgz#31f9d68d236be7fbcecfb1834c934d0213d678a2"
-  integrity sha512-72Q2IcAkDZVTXgLERy+Jr2I0h4/m7k3J3wnEcmLgTMDfbxYhC7PK/m0gwI6aLu7jFEfYpmdVjhjoOSiabjurmA==
+"@portal-hq/connect@^4.1.6":
+  version "4.1.6"
+  resolved "https://registry.yarnpkg.com/@portal-hq/connect/-/connect-4.1.6.tgz#a72ae5627bc49503edeb615ec129536f806a1a3c"
+  integrity sha512-5G18a6Rh+jks+M7ned93TJbwXkVthux2fRaEtFFxj9+Vx4ESzNH2WsxAKIVc6dDgD0W4aSheCHChBMsHV5y18w==
 
-"@portal-hq/core@^4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@portal-hq/core/-/core-4.1.1.tgz#7f233a27f557af2d5eabbde1aa89ff2f84da1dfc"
-  integrity sha512-s0Bsh4lgt+l8rDlBkX8djWeCiT1KQcfOBCTLmrog0Gc03KYC/EwpcYZWSLUJrVWgWO0v8jL9cZesLpoHPxjWCQ==
+"@portal-hq/core@^4.1.6":
+  version "4.1.6"
+  resolved "https://registry.yarnpkg.com/@portal-hq/core/-/core-4.1.6.tgz#2966d8d9837ba339f5233cce78f2cd3b742b3b68"
+  integrity sha512-vFSBi4M953G745p/4tUSpS5y1LZhRwSO0iscijUwFkpQUSRFovGfvvA8oVCJ5VWRYfXFY9VVXpn0FXuLG4oJ9Q==
   dependencies:
-    "@portal-hq/connect" "^4.1.1"
-    "@portal-hq/keychain" "^4.1.1"
-    "@portal-hq/provider" "^4.1.1"
-    "@portal-hq/swaps" "^4.1.1"
-    "@portal-hq/utils" "^4.1.1"
+    "@portal-hq/connect" "^4.1.6"
+    "@portal-hq/keychain" "^4.1.6"
+    "@portal-hq/provider" "^4.1.6"
+    "@portal-hq/swaps" "^4.1.6"
+    "@portal-hq/utils" "^4.1.6"
 
-"@portal-hq/gdrive-storage@^4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@portal-hq/gdrive-storage/-/gdrive-storage-4.1.1.tgz#8bfe504a5df481fd4a5bd4e4e94bb4f89098937d"
-  integrity sha512-wl5rwO7gTG9g6iBJOs4830KNlij6JBz0f30n7MAE2/sw+rYU2dVwn/gcNUDhLF8sDwhXKqVfRfTEGZiF4KxNdw==
+"@portal-hq/gdrive-storage@^4.1.6":
+  version "4.1.6"
+  resolved "https://registry.yarnpkg.com/@portal-hq/gdrive-storage/-/gdrive-storage-4.1.6.tgz#25b3b55eddf57745146fe06ccec57ba686e3c954"
+  integrity sha512-gtXqN98IRdlQfzXzleiJUGXROWSy/AYil8eW2ZeltBoS/KPyCog93vYbo/AGG0VTSaBpV63k5aqK3yBUzKoNdQ==
   dependencies:
-    "@portal-hq/core" "^4.1.1"
-    "@portal-hq/utils" "^4.1.1"
+    "@portal-hq/core" "^4.1.6"
+    "@portal-hq/utils" "^4.1.6"
 
-"@portal-hq/keychain@^4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@portal-hq/keychain/-/keychain-4.1.1.tgz#17c2f99cc37e272d06e046bcf79c5c8504e87173"
-  integrity sha512-trS8SAPFcH0+5iGsLnxnOs0k66wHdGk2kmbNXYyS7hZl8cpfZR2oAmIdQHd+w76yqZ5zdJB8zd1zVHwmEfWoXw==
+"@portal-hq/keychain@^4.1.6":
+  version "4.1.6"
+  resolved "https://registry.yarnpkg.com/@portal-hq/keychain/-/keychain-4.1.6.tgz#3a03a98f8c8b242ced4c868771b4e3490101c386"
+  integrity sha512-TnvQCeMuzCgYdQcwUzfJE4Hzb6f5be8TLnjv3NRFWWchwrR30KCkrkqbKTfO6EVriRs4epaFt6E9JuSN4bIEhw==
   dependencies:
-    "@portal-hq/utils" "^4.1.1"
+    "@portal-hq/utils" "^4.1.6"
 
-"@portal-hq/provider@^4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@portal-hq/provider/-/provider-4.1.1.tgz#ff8d8182c0f7ee74a50d59b00b93e396ebfeb595"
-  integrity sha512-W+SxaTp3kVdMmvmNK1pIHKlRoybTKo657cKPQmBd79uE4E6z9mAQwSJ7FDyQ65hlPRgeWYDWt/oFJIhaBxZY1g==
+"@portal-hq/provider@^4.1.6":
+  version "4.1.6"
+  resolved "https://registry.yarnpkg.com/@portal-hq/provider/-/provider-4.1.6.tgz#01bc59cf9c470e377c26b332c8725434dda53cfd"
+  integrity sha512-kBPYoodPE5U0+2pO5lftuAMVB3q3dcdlcydaQxE1o8RuRqHW8HRUggCpCeHgQj2B39tow654pPI7tCo5coXjcA==
   dependencies:
-    "@portal-hq/connect" "^4.1.1"
-    "@portal-hq/utils" "^4.1.1"
+    "@portal-hq/connect" "^4.1.6"
+    "@portal-hq/utils" "^4.1.6"
+    "@types/react-native-uuid" "^2.0.0"
+    react-native-uuid "^2.0.3"
 
-"@portal-hq/swaps@^4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@portal-hq/swaps/-/swaps-4.1.1.tgz#dd8448b0845601990944c6299ab5658b40234d30"
-  integrity sha512-JpyoaDZe+kmZQS66f009De/lqSou+jqhGrymNThA9WrVEt/QMQg3cEo4fWJ9+EEXLT+MdlrKhVhn78u2QleNmg==
+"@portal-hq/swaps@^4.1.6":
+  version "4.1.6"
+  resolved "https://registry.yarnpkg.com/@portal-hq/swaps/-/swaps-4.1.6.tgz#29aeb9d87fad175a62560dd1e42b0e12b7780560"
+  integrity sha512-GY03KSw0j9NNozgeyXPxA4xzEpB2LI5RM0bZiylH0xMRX2MFez7x1B+2mzO1d/rhPbRuoAr6VmoBb0AbPJdrQg==
   dependencies:
-    "@portal-hq/provider" "^4.1.1"
-    "@portal-hq/utils" "^4.1.1"
+    "@portal-hq/provider" "^4.1.6"
+    "@portal-hq/utils" "^4.1.6"
 
-"@portal-hq/utils@^4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@portal-hq/utils/-/utils-4.1.1.tgz#4ce6e4f7b7e8dafdb5cbfa88da76d127be175900"
-  integrity sha512-SDfE6bL38ZxIPFf9y0hzwgOuMhfLjBaH23N3l3dkhmHEXjlC8DY3caA7bwA+h42c9sE3GCVyCzf9HiPHOI9Y6Q==
+"@portal-hq/utils@^4.1.6":
+  version "4.1.6"
+  resolved "https://registry.yarnpkg.com/@portal-hq/utils/-/utils-4.1.6.tgz#5157a79bb7279be642d3c9ab77b56aa8240eff3c"
+  integrity sha512-wu94tvsxULct9fPe6bYoWdfXuaDSpWTZmI0YA/tOUwEleLSGNpF/AnPu7UCS+Onse5rE1NLByF7jeBeVr+q1lw==
 
 "@radix-ui/react-compose-refs@1.0.0":
   version "1.0.0"
@@ -2050,6 +2065,13 @@
   version "15.7.14"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.14.tgz#1433419d73b2a7ebfc6918dcefd2ec0d5cd698f2"
   integrity sha512-gNMvNH49DJ7OJYv+KAKn0Xp45p8PLl6zo2YnvDIbTd4J6MER2BmWN49TG7n9LvkyihINxeKW8+3bfS2yDC9dzQ==
+
+"@types/react-native-uuid@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@types/react-native-uuid/-/react-native-uuid-2.0.0.tgz#b0c4ec48973fd6618c104c15034a94edae00b1bf"
+  integrity sha512-EzREcBGsE6AeXWmXbWq0RFtzBh1RLjHWHU4uwirroQD9FVpFmKdqKW4r8mmTK40FGQiYAhhyWTnWV98ID3Ajow==
+  dependencies:
+    react-native-uuid "*"
 
 "@types/react-test-renderer@^18.3.0":
   version "18.3.1"
@@ -6238,6 +6260,11 @@ react-native-toast-message@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/react-native-toast-message/-/react-native-toast-message-2.2.1.tgz#f395321e9bc818ce63274c38a3d294ed997a4a27"
   integrity sha512-iXFMnlxPcgKKs4bZOIl06W16m6KXMh/bAYpWLyVXlISSCdcL2+FX5WPpRP3TGQeM/u9q+j5ex48DDY+72en+Sw==
+
+react-native-uuid@*, react-native-uuid@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/react-native-uuid/-/react-native-uuid-2.0.3.tgz#f85f8a8d68e52e3f1c18ba0f02ec7776f9d4a0da"
+  integrity sha512-f/YfIS2f5UB+gut7t/9BKGSCYbRA9/74A5R1MDp+FLYsuS+OSWoiM/D8Jko6OJB6Jcu3v6ONuddvZKHdIGpeiw==
 
 react-native-web@~0.19.13:
   version "0.19.13"
